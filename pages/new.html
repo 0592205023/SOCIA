@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> تطبيق تاجر إنستا | زيادة متابعين, لايكات</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/icon/favicon.png">
+    <!-- Font Awesome Css -->
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="../assets/css/plugins/bootstrap/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
@@ -103,70 +104,18 @@
         <div class="container custom_container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 id="head1">Clubhouse Services</h2>
-                    <span><a href="../index.html" id="parent">services</a> <i class="fa-solid fa-chevron-right"></i> </span> <span id="head2"> Clubhouse Services</span>
+                    <h2 id="head1">what's new</h2>
+                    <span><a href="../index.html" id="parent">Home</a> <i class="fa-solid fa-chevron-right me-1 ms-2" id="icons"></i></span><span id="head2"> what's new</span>
                 </div>
             </div>
         </div>
     </section>
     
-    
-
-    <section class="new_info_box_aria">
-        <div class="container custom_container">
-            <div class="new_items">
-                <div class="row">
-                    <div class="col-lg-6 cord">
-                        <div class="single_item" style="padding-bottom: 30px;">
-                            <img src="https://tagerinsta.com/backend/public//upload/images/thumb/qANMV000aQiQYAAV.png" width="100px" alt="">
-                            <div class="item_content twe_buy">
-                                <h5 style="margin-top: 10px;" id="clubfollint"> Clubhouse followers - international accounts</h5>
-                                <a href="pricing.html" style="padding: 10px 40px; margin-top: 5px;" class="min_btn">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 cord">
-                        <div class="single_item" style="padding-bottom: 30px;">
-                            <img src="https://tagerinsta.com/backend/public//upload/images/thumb/qANMV000aQiQYAAV.png" width="100px" alt="">
-                            <div class="item_content twe_buy">
-                                <h5 style="margin-top: 10px;" id="clubfollarab"> Club House Arab followers</h5>
-                                <a href="pricing.html" style="padding: 10px 40px; margin-top: 5px;" class="min_btn">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 cord">
-                        <div class="single_item" style="padding-bottom: 30px;">
-                            <img src="https://tagerinsta.com/backend/public//upload/images/thumb/qANMV000aQiQYAAV.png" width="100px" alt="">
-                            <div class="item_content twe_buy">
-                                <h5 style="margin-top: 10px;" id="clubvisiarab"> Clubhouse visitors are Arabs</h5>
-                                <a href="pricing.html" style="padding: 10px 40px; margin-top: 5px;" class="min_btn">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 cord">
-                        <div class="single_item" style="padding-bottom: 30px;">
-                            <img src="https://tagerinsta.com/backend/public//upload/images/thumb/qANMV000aQiQYAAV.png" width="100px" alt="">
-                            <div class="item_content twe_buy">
-                                <h5 style="margin-top: 10px;" id="clubvisiint">Clubhouse visitors - international accounts</h5>
-                                <a href="pricing.html" style="padding: 10px 40px; margin-top: 5px;" class="min_btn">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
 
 
 
-            
-                    
-                </div>
-            </div>
-        </div>
-    </section> 
 
-
-
+    <!-- jQuery Libraary -->
 
 
     <script>
@@ -196,18 +145,28 @@
         let report = document.getElementById('report');
         let support = document.getElementById('support');
         let login = document.getElementById('login');
+        // let you_ser2 = document.getElementById('you_ser2');
+        // let you_ser1 = document.getElementById('you_ser1');
+        // let ser = document.getElementById('ser');
+        // let you_view = document.getElementById('you_view');
+        // let you_like = document.getElementById('you_like');
+        // let you_sub = document.getElementById('you_sub');
+        // let card = document.getElementsByClassName('cord');
+        // let twe_buy = document.getElementsByClassName('twe_buy');
+        // let min_btn = document.getElementsByClassName('min_btn');
         let head1 = document.getElementById('head1');
         let head2 = document.getElementById('head2');
         let parent = document.getElementById('parent');
         let dir = document.getElementById('dir');
-        let card = document.getElementsByClassName('cord');
-        let twe_buy = document.getElementsByClassName('twe_buy');
-        let min_btn = document.getElementsByClassName('min_btn');
-        let clubfollint = document.getElementById('clubfollint');
-        let clubfollarab = document.getElementById('clubfollarab');
-        let clubvisiarab = document.getElementById('clubvisiarab');
-        let clubvisiint = document.getElementById('clubvisiint');
-
+        let ordernumber = document.getElementById('ordernumber');
+        let username = document.getElementById('username');
+        let servicetype = document.getElementById('servicetype');
+        let package = document.getElementById('package');
+        let price = document.getElementById('price');
+        let status = document.getElementById('status');
+        let date = document.getElementById('date');
+        let icons = document.getElementById('icons');
+        
         arabic.onclick =()=>{
             setlanguage('arabic');
             localStorage.setItem('lang','arabic');
@@ -235,9 +194,9 @@
         function setlanguage(getlanguage){
             // alert(0);
             if(getlanguage === 'arabic'){
-                head1.innerHTML='خدمات كلوب هاوس';
-                head2.innerHTML='خدمات كلوب هاوس';
-                parent.innerHTML='خدماتنا';
+                head1.innerHTML='ما الجديد';
+                head2.innerHTML='ما الجديد';
+                parent.innerHTML='الصفحة الرئيسية';
                 service.innerHTML = 'خدماتنا';
                 service_ins.innerHTML = 'خدمات انستقرام';
                 service_twi.innerHTML = 'خدمات تويتر';
@@ -253,39 +212,14 @@
                 nav.setAttribute("dir", "rtl");
                 // yahya.setAttribute("dir", "rtl");
                 logo_text.innerHTML = 'تاجر انستا';
-                clubfollint.innerHTML = 'متابعو كلوب هاوس - الحسابات الدولية';
-                clubfollarab.innerHTML = 'كلوب هاوس المتابعين العرب';
-                clubvisiarab.innerHTML = 'كلوب هاوس زوار عرب';
-                clubvisiint.innerHTML = 'كلوب هاوس زوار حسابات دولية';
-
-                for(var i=0;i<card.length;i++) {
-                    card[i].setAttribute("dir", "rtl");
-                }
-
-
-
-
-
-                for(var i=0;i<twe_buy.length;i++) {
-                    twe_buy[i].style = "margin-right:50px;";
-                }
-
-
-                for(var i=0;i<min_btn.length;i++) {
-                    min_btn[i].innerHTML = 'اشتري الان';
-                }
-
-
-
-
-
-
-
+                login.innerHTML = 'تسجيل الدخول';
+                icons.style ="    transform: rotate(178deg)";
             }else if(getlanguage === 'english'){
-                head1.innerHTML='Clubhouse Services';
-                head2.innerHTML='Clubhouse Services';
-                parent.innerHTML='Services';
+                head1.innerHTML='Whats New';
+                head2.innerHTML='Whats New';
+                parent.innerHTML='Home';
 
+                dir.setAttribute("dir", "ltr");
 
                 logo_text.innerHTML = 'Tager insta';
                 home.innerHTML = 'Home';
@@ -303,27 +237,14 @@
                 login.innerHTML = 'Login';
                 nav.setAttribute("dir", "ltr");
 
-                for(var i=0;i<card.length;i++) {
-                    card[i].setAttribute("dir", "ltr");
-                }
-                for(var i=0;i<min_btn.length;i++) {
-                    min_btn[i].innerHTML = 'Buy Now';
-                }
-                for(var i=0;i<twe_buy.length;i++) {
-                    twe_buy[i].style = "margin-right:0;";
-                }
-                clubfollint.innerHTML = 'Clubhouse followers - international accounts';
-                clubfollarab.innerHTML = 'Club House Arab followers';
-                clubvisiarab.innerHTML = 'Clubhouse visitors are Arabs';
-                clubvisiint.innerHTML = 'Clubhouse visitors - international accounts';
-
+        
         
             }
         }
-
-</script>
-
-
+        
+        
+        </script>
+        
 
     <!-- jQuery Libraary -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -347,6 +268,9 @@
     <script src="../assets/js/slick.min.js"></script>
     <!-- Main Js -->
     <script src="../assets/js/main.js"></script>
+
+
+
 </body>
 
 </html>

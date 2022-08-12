@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Whal - Digital Marketing & SEO WordPress Theme</title>
+    <title> تطبيق تاجر إنستا | زيادة متابعين, لايكات</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/icon/favicon.png">
     <!-- Font Awesome Css -->
     <link rel="stylesheet" href="../assets/css/plugins/font-awesome/css/all.min.css">
@@ -38,14 +38,14 @@
     <header class="header_aria">
         <nav id="nav" class="navbar navbar-expand-lg fixed-top bg-transfarent" >
             <div class="container custom_container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../assets/img/logo.png" width="50px" alt="">
                     <b id="logo-text">Tager insta</b>
 
                 </a>
                 <div class="search d-lg-none">
-                    <button class="btn btn-primary" id="arabic">ar</button>
-                    <button class="btn btn-success" id="english">en</button>
+                    <button class="btn btn-primary" id="ar">ar</button>
+                    <button class="btn btn-success" id="en">en</button>
             </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -62,7 +62,7 @@
                         <li class="nav-item dropdown">
 
                             
-                            <a class="nav-link dropdown-toggle" id="service" href="#">
+                            <a class="nav-link dropdown-toggle" id="service" href="../index.html">
                                 Service
                             </a>
                             <i class="fa-solid fa-angle-down mobile_dropdown_icon" style="float: end;"></i>
@@ -77,23 +77,17 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="what" href="#">
+                            <a class="nav-link dropdown-toggle" id="what" href="new.html">
                                 what's new
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="report" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="report.html" id="report" >
                                 Orders Report
                             </a>
-                            <!-- <i class="fa-solid fa-angle-down mobile_dropdown_icon"></i> -->
-                            <!-- <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="blog.html">Blog List</a></li>
-                                <li><a class="dropdown-item" href="blog-single.html">Single Blog</a></li>
-                            </ul> -->
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="support" href="#">
+                            <a class="nav-link dropdown-toggle" id="support" href="support.html">
                                 Technical support
                             </a>
                         </li>
@@ -103,7 +97,7 @@
                     <div class="search d-lg-block">
                         <button class="btn btn-primary" id="arabic">ar</button>
                         <button class="btn btn-success" id="english">en</button>
-                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -115,8 +109,8 @@
         <div class="container custom_container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 id="snap">Snap Chat services</h2>
-                    <span><a href="#">services</a> <i class="fa-solid fa-chevron-right"></i>Snap Chat services</span>
+                    <h2 id="snap">Pricing Page</h2>
+                    <span><a href="../index.html">services</a> <i class="fa-solid fa-chevron-right"></i>Pricing Page</span>
                 </div>
             </div>
         </div>
@@ -207,6 +201,8 @@
 <script>
 
 
+let ar = document.getElementById('ar');
+let en = document.getElementById('en');
 
 let arabic = document.getElementById('arabic');
 let english = document.getElementById('english');
@@ -241,6 +237,14 @@ english.onclick =()=>{
     setlanguage('english');
     localStorage.setItem('lang','english');
 };
+ar.onclick =()=>{
+            setlanguage('arabic');
+            localStorage.setItem('lang','arabic');
+        };
+        en.onclick =()=>{
+            setlanguage('english');
+            localStorage.setItem('lang','english');
+        };
 
 onload = ()=>{
     setlanguage(localStorage.getItem('lang'));
@@ -250,7 +254,7 @@ function setlanguage(getlanguage){
     // alert(0);
     if(getlanguage === 'arabic'){
         // console.log(0);
-        snap.innerHTML = 'خدمات سناب شات';
+        snap.innerHTML = 'الاسعار';
         quantity.innerHTML = 'الكمية';
         price.innerHTML = 'السعر';
         buy_now.innerHTML = 'اشتري الان';
@@ -274,7 +278,7 @@ function setlanguage(getlanguage){
 
     }else if(getlanguage === 'english'){
 console.log(1);
-        snap.innerHTML = 'Snap Chat services';
+        snap.innerHTML = 'Pricing Page';
         quantity.innerHTML = 'Quantity';
         price.innerHTML = 'Price';
         buy_now.innerHTML = 'Buy Now';

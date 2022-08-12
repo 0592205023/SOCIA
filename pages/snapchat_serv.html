@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Whal - Digital Marketing & SEO WordPress Theme</title>
+    <title> تطبيق تاجر إنستا | زيادة متابعين, لايكات</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/icon/favicon.png">
     <!-- Font Awesome Css -->
     <link rel="stylesheet" href="../assets/css/plugins/font-awesome/css/all.min.css">
@@ -40,8 +40,8 @@
 
                 </a>
                 <div class="search d-lg-none">
-                    <button class="btn btn-primary" id="arabic">ar</button>
-                    <button class="btn btn-success" id="english">en</button>
+                    <button class="btn btn-primary" id="ar">ar</button>
+                    <button class="btn btn-success" id="en">en</button>
             </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -58,7 +58,7 @@
                         <li class="nav-item dropdown">
 
                             
-                            <a class="nav-link dropdown-toggle" id="service" href="#">
+                            <a class="nav-link dropdown-toggle" id="service" href="../index.html">
                                 Service
                             </a>
                             <i class="fa-solid fa-angle-down mobile_dropdown_icon" style="float: end;"></i>
@@ -73,13 +73,12 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="what" href="#">
+                            <a class="nav-link dropdown-toggle" id="what" href="new.html">
                                 what's new
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="report" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="report.html" id="report" >
                                 Orders Report
                             </a>
                             <!-- <i class="fa-solid fa-angle-down mobile_dropdown_icon"></i> -->
@@ -89,7 +88,7 @@
                             </ul> -->
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="support" href="#">
+                            <a class="nav-link dropdown-toggle" id="support" href="support.html">
                                 Technical support
                             </a>
                         </li>
@@ -111,8 +110,8 @@
         <div class="container custom_container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Snap Chat services</h2>
-                    <span><a href="#">services</a> <i class="fa-solid fa-chevron-right"></i>Snap Chat services</span>
+                    <h2 id="head1">Snap Chat services</h2>
+                    <span><a href="../index.html" id="parent">services</a> <i class="fa-solid fa-chevron-right"></i></span>  <span id="head2">Snap Chat services</span>
                 </div>
             </div>
         </div>
@@ -124,12 +123,12 @@
         <div class="container custom_container">
             <div class="new_items">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" id="dir">
                         <div class="single_item" style="padding-bottom: 30px;">
                             <img src="https://tagerinsta.com/backend/public//upload/images/thumb/Pq1mYRlVEWXGqFZv.png" width="100px"  alt="">
-                            <div class="item_content">
-                                <h5 style="margin-top: 10px;"> arab snapchat followers</h5>
-                                <a href="pricing.html" style="padding: 10px 40px; margin-top: 5px;" class="min_btn">Buy Now</a>
+                            <div class="item_content" id="margin">
+                                <h5 style="margin-top: 10px;" id="arabsnap"> arab snapchat followers</h5>
+                                <a href="pricing.html" style="padding: 10px 40px; margin-top: 5px;" class="min_btn" id="btn">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -141,6 +140,138 @@
             </div>
         </div>
     </section> 
+
+
+<script>
+
+
+    let arabic = document.getElementById('arabic');
+    let english = document.getElementById('english');
+    let ar = document.getElementById('ar');
+    let en = document.getElementById('en');
+    // let snap = document.getElementById('snap');
+    // let price_list = document.getElementById('price');
+    // let tagerinsta = document.getElementById('tagerinsta');
+    let nav = document.getElementById('nav');
+    let logo_text = document.getElementById('logo-text');
+    // let buy_now = document.getElementById('buy_now');
+    let home = document.getElementById('home');
+    let service = document.getElementById('service');
+    let service_ins = document.getElementById('service_ins');
+    let service_twi = document.getElementById('service_twi');
+    let service_fac = document.getElementById('service_fac');
+    let service_you = document.getElementById('service_you');
+    let service_snap = document.getElementById('service_snap');
+    let service_tik = document.getElementById('service_tik');
+    let service_clu = document.getElementById('service_clu');
+    let what = document.getElementById('what');
+    let report = document.getElementById('report');
+    let support = document.getElementById('support');
+    let login = document.getElementById('login');
+    let head1 = document.getElementById('head1');
+    let head2 = document.getElementById('head2');
+    let parent = document.getElementById('parent');
+    let dir = document.getElementById('dir');
+    let margin = document.getElementById('margin');
+    let arabsnap = document.getElementById('arabsnap');
+    let btn = document.getElementById('btn');
+    
+    arabic.onclick =()=>{
+        setlanguage('arabic');
+        localStorage.setItem('lang','arabic');
+    };
+    
+    ar.onclick =()=>{
+        setlanguage('arabic');
+        localStorage.setItem('lang','arabic');
+    };
+    
+    en.onclick =()=>{
+        setlanguage('english');
+        localStorage.setItem('lang','english');
+    };
+    
+    english.onclick =()=>{
+        setlanguage('english');
+        localStorage.setItem('lang','english');
+    };
+    
+    onload = ()=>{
+        setlanguage(localStorage.getItem('lang'));
+    };
+    
+    function setlanguage(getlanguage){
+        // alert(0);
+        if(getlanguage === 'arabic'){
+            head1.innerHTML='خدمات سناب شات';
+            head2.innerHTML='خدمات سناب شات';
+            parent.innerHTML = 'خدماتنا';
+            logo_text.innerHTML = 'تاجر انستا';
+            parent.innerHTML='الصفحة الرئيسية';
+            service.innerHTML = 'خدماتنا';
+            service_ins.innerHTML = 'خدمات انستقرام';
+            service_twi.innerHTML = 'خدمات تويتر';
+            service_fac.innerHTML = 'خدمات فيسبوك';
+            service_you.innerHTML = 'خدمات يوتيوب';
+            service_snap.innerHTML = 'خدمات سناب شات';
+            service_tik.innerHTML = 'خدمات تيك توك ';
+            service_clu.innerHTML = 'خدمات كلوب هاوس';
+            home.innerHTML = 'الرئيسية';
+            what.innerHTML = 'ما الجديد';
+            report.innerHTML = 'تقرير الطلبات';
+            support.innerHTML = 'الدعم الفني';
+            nav.setAttribute("dir", "rtl");
+            login.innerHTML = 'تسجيل الدخول';
+
+            dir.setAttribute("dir", "rtl");
+            margin.style ="margin-right:50px";
+            arabsnap.innerHTML = 'متابعين سناب شات عرب';
+            btn.innerHTML = 'اشتري الان';
+        }else if(getlanguage === 'english'){
+            head1.innerHTML='Snap Chat services';
+            head2.innerHTML='Snap Chat services';
+            parent.innerHTML='Services';
+
+
+            logo_text.innerHTML = 'Tager insta';
+            home.innerHTML = 'Home';
+            service.innerHTML = 'Service';
+            service_ins.innerHTML = 'Instagram services';
+            service_twi.innerHTML = 'Twitter services';
+            service_fac.innerHTML = 'Facebook services';
+            service_you.innerHTML = 'YouTube Services';
+            service_snap.innerHTML = 'snapchat services';
+            service_tik.innerHTML = 'tiktok services ';
+            service_clu.innerHTML = 'Clubhouse Services';
+            what.innerHTML = "what's new";
+            report.innerHTML = 'Orders Report';
+            support.innerHTML = 'Technical support';
+            login.innerHTML = 'Login';
+            nav.setAttribute("dir", "ltr");
+
+            dir.setAttribute("dir", "ltr");
+            margin.style ="margin-right:0";
+            arabsnap.innerHTML = 'arab snapchat followers';
+            btn.innerHTML = 'Buy Now';
+
+    
+        }
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- jQuery Libraary -->
     <script src="../assets/js/jquery.min.js"></script>

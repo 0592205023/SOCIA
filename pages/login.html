@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Whal - Digital Marketing & SEO WordPress Theme</title>
+    <title> تطبيق تاجر إنستا | زيادة متابعين, لايكات</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/icon/favicon.png">
     <!-- Font Awesome Css -->
     <link rel="stylesheet" href="../assets/css/plugins/font-awesome/css/all.min.css">
@@ -40,8 +40,8 @@
 
                 </a>
                 <div class="search d-lg-none">
-                    <button class="btn btn-primary" id="arabic">ar</button>
-                    <button class="btn btn-success" id="english">en</button>
+                    <button class="btn btn-primary" id="ar">ar</button>
+                    <button class="btn btn-success" id="en">en</button>
             </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -58,7 +58,7 @@
                         <li class="nav-item dropdown">
 
                             
-                            <a class="nav-link dropdown-toggle" id="service" href="#">
+                            <a class="nav-link dropdown-toggle" id="service" href="../index.html">
                                 Service
                             </a>
                             <i class="fa-solid fa-angle-down mobile_dropdown_icon" style="float: end;"></i>
@@ -73,23 +73,17 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="what" href="#">
+                            <a class="nav-link dropdown-toggle" id="what" href="new.html">
                                 what's new
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="report" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="report.html" id="report" >
                                 Orders Report
                             </a>
-                            <!-- <i class="fa-solid fa-angle-down mobile_dropdown_icon"></i> -->
-                            <!-- <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="blog.html">Blog List</a></li>
-                                <li><a class="dropdown-item" href="blog-single.html">Single Blog</a></li>
-                            </ul> -->
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="support" href="#">
+                            <a class="nav-link dropdown-toggle" id="support" href="support.html">
                                 Technical support
                             </a>
                         </li>
@@ -111,8 +105,8 @@
         <div class="container custom_container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Instagram services</h2>
-                    <span><a href="#">services</a> <i class="fa-solid fa-chevron-right"></i>Instagram services</span>
+                    <h2 id="head1">Login page</h2>
+                    <span><a href="../index.html" id="parent">Home</a> <i class="fa-solid fa-chevron-right mx-3"></i></span> <span id="head2">Login page</span>
                 </div>
             </div>
         </div>
@@ -124,18 +118,18 @@
         <div class="container custom_container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
-                    <div class="contact_form_aria text-center wow fadeInUp w-100" data-wow-delay="0.1s" >
+                    <div class="contact_form_aria text-center wow fadeInUp w-100" data-wow-delay="0.1s" id="form">
                         <div class="section_title">
-                            <h2>Login</h2>
-
-                            <p> Don't have an account?<a href="sign.html"><b>Sign Up!</b></a> </p>
-
+                            <h2 id="log_form">Login</h2>
+<div class="d-flex " style="justify-content: center;">
+                            <p id="dont_has"> Don't have an account?</p><b><a href="sign.html" id="sign">Sign Up!</a> 
+</div>
                         </div>
                         <form action="#" class="min_form">
-                            <input type="text" class="form-control input mb-3" placeholder="UserName Or Email">
-                            <input type="password" class="form-control input mb-3" placeholder="Password">
-                            <a href="forgot.html"><b> Forgot Password?</b></a>
-                            <input type="button" value="Login" class="min_btn mb-3"> 
+                            <input type="text" class="form-control input mb-3" placeholder="UserName Or Email" id="input1">
+                            <input type="password" class="form-control input mb-3" placeholder="Password" id="input2">
+                            <a href="forgot.html"><b id="input3"> Forgot Password?</b></a>
+                            <input type="button" value="Login" class="min_btn mb-3" id="input4"> 
                         </form>
                     </div>
                 </div>
@@ -144,8 +138,146 @@
     </section> 
     <!-- Contact Section -->
 
+    <script>
 
 
+
+        let arabic = document.getElementById('arabic');
+        let english = document.getElementById('english');
+        let ar = document.getElementById('ar');
+        let en = document.getElementById('en');
+        // let snap = document.getElementById('snap');
+        // let price_list = document.getElementById('price');
+        // let tagerinsta = document.getElementById('tagerinsta');
+        let nav = document.getElementById('nav');
+        let logo_text = document.getElementById('logo-text');
+        // let buy_now = document.getElementById('buy_now');
+        let home = document.getElementById('home');
+        let service = document.getElementById('service');
+        let service_ins = document.getElementById('service_ins');
+        let service_twi = document.getElementById('service_twi');
+        let service_fac = document.getElementById('service_fac');
+        let service_you = document.getElementById('service_you');
+        let service_snap = document.getElementById('service_snap');
+        let service_tik = document.getElementById('service_tik');
+        let service_clu = document.getElementById('service_clu');
+        let what = document.getElementById('what');
+        let report = document.getElementById('report');
+        let support = document.getElementById('support');
+        let login = document.getElementById('login');
+        let head1 = document.getElementById('head1');
+        let head2 = document.getElementById('head2');
+        let parent = document.getElementById('parent');
+        let dir = document.getElementById('dir');
+        let ordernumber = document.getElementById('ordernumber');
+        let username = document.getElementById('username');
+        let servicetype = document.getElementById('servicetype');
+        let package = document.getElementById('package');
+        let price = document.getElementById('price');
+        let status = document.getElementById('status');
+        let date = document.getElementById('date');
+        let form = document.getElementById('form');
+        let log_form = document.getElementById('log_form');
+        let dont_has = document.getElementById('dont_has');
+        let sign = document.getElementById('sign');
+        let input1 = document.getElementById('input1');
+        let input2 = document.getElementById('input2');
+        let input3 = document.getElementById('input3');
+        let input4 = document.getElementById('input4');
+        
+        arabic.onclick =()=>{
+            setlanguage('arabic');
+            localStorage.setItem('lang','arabic');
+        };
+        
+        ar.onclick =()=>{
+            setlanguage('arabic');
+            localStorage.setItem('lang','arabic');
+        };
+        
+        en.onclick =()=>{
+            setlanguage('english');
+            localStorage.setItem('lang','english');
+        };
+        
+        english.onclick =()=>{
+            setlanguage('english');
+            localStorage.setItem('lang','english');
+        };
+        
+        onload = ()=>{
+            setlanguage(localStorage.getItem('lang'));
+        };
+        
+        function setlanguage(getlanguage){
+            // alert(0);
+            if(getlanguage === 'arabic'){
+                head1.innerHTML='تسجيل الدخول';
+                head2.innerHTML='تسجيل الدخول';
+                parent.innerHTML='الصفحة الرئيسية';
+                service.innerHTML = 'خدماتنا';
+                service_ins.innerHTML = 'خدمات انستقرام';
+                service_twi.innerHTML = 'خدمات تويتر';
+                service_fac.innerHTML = 'خدمات فيسبوك';
+                service_you.innerHTML = 'خدمات يوتيوب';
+                service_snap.innerHTML = 'خدمات سناب شات';
+                service_tik.innerHTML = 'خدمات تيك توك ';
+                service_clu.innerHTML = 'خدمات كلوب هاوس';
+                home.innerHTML = 'الرئيسية';
+                what.innerHTML = 'ما الجديد';
+                report.innerHTML = 'تقرير الطلبات';
+                support.innerHTML = 'الدعم الفني';
+                nav.setAttribute("dir", "rtl");
+                // yahya.setAttribute("dir", "rtl");
+                logo_text.innerHTML = 'تاجر انستا';
+                login.innerHTML = 'تسجيل الدخول';
+                log_form.innerHTML = 'تسجيل الدخول';
+                dont_has.innerHTML = ' اذا لا تملك حساب ';
+                log_form.innerHTML = 'تسجيل الدخول';
+                sign.innerHTML = 'انشاء حساب';
+                sign.style = 'margin-right:7px';
+                form.setAttribute('dir','rtl');
+                input1.setAttribute('placeholder','اسم المستخدم او الايميل');
+                input2.setAttribute('placeholder','كلمة المرور');
+                input3.innerHTML = 'نسيت كلمة المرور';
+                input4.setAttribute('value','تسجيل الدخول');
+
+            }else if(getlanguage === 'english'){
+                head1.innerHTML='Login Page';
+                head2.innerHTML='Login Page';
+                parent.innerHTML='Home';
+
+
+                logo_text.innerHTML = 'Tager insta';
+                home.innerHTML = 'Home';
+                service.innerHTML = 'Service';
+                service_ins.innerHTML = 'Instagram services';
+                service_twi.innerHTML = 'Twitter services';
+                service_fac.innerHTML = 'Facebook services';
+                service_you.innerHTML = 'YouTube Services';
+                service_snap.innerHTML = 'snapchat services';
+                service_tik.innerHTML = 'tiktok services ';
+                service_clu.innerHTML = 'Clubhouse Services';
+                what.innerHTML = "what's new";
+                report.innerHTML = 'Orders Report';
+                support.innerHTML = 'Technical support';
+                login.innerHTML = 'Login';
+                nav.setAttribute("dir", "ltr");
+                form.setAttribute('dir','ltr');
+                log_form.innerHTML = 'Login';
+                sign.innerHTML = 'sign up !';
+                dont_has.innerHTML = 'Dont have an accoun ?';
+                input1.setAttribute('placeholder','UserName Or Email');
+                input2.setAttribute('placeholder','Password');
+                input3.innerHTML = 'Forgot Password?';
+                input4.setAttribute('value','Login');
+
+        
+        
+            }
+        }
+
+</script>
 
 
     <!-- jQuery Libraary -->
